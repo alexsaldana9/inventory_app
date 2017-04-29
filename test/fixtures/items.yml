@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_name: MyString
+  date_received: 2017-04-29 15:47:56
+  manufacturer: MyString
+  lot_number: MyString
+  expiration_date: 2017-04-29 15:47:56
+  quantity: 1
+  purity: 1.5
+  storage: MyString
+  disposal_date: 2017-04-29 15:47:56
+  area_use: MyString
+
+two:
+  item_name: MyString
+  date_received: 2017-04-29 15:47:56
+  manufacturer: MyString
+  lot_number: MyString
+  expiration_date: 2017-04-29 15:47:56
+  quantity: 1
+  purity: 1.5
+  storage: MyString
+  disposal_date: 2017-04-29 15:47:56
+  area_use: MyString

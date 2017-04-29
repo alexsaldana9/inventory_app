@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item name:</strong>
+  <%= @item.item_name %>
+</p>
+
+<p>
+  <strong>Date received:</strong>
+  <%= @item.date_received.strftime("%m/%d/%Y") %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @item.manufacturer %>
+</p>
+
+<p>
+  <strong>Lot number:</strong>
+  <%= @item.lot_number %>
+</p>
+
+<p>
+  <strong>Expiration date:</strong>
+  <%= @item.expiration_date.strftime("%m/%d/%Y") %>
+</p>
+
+<p>
+  <strong>Quantity:</strong>
+  <%= @item.quantity %>
+</p>
+
+<p>
+  <strong>Purity:</strong>
+  <%= @item.purity %>
+</p>
+
+<p>
+  <strong>Storage:</strong>
+  <%= @item.storage %>
+</p>
+
+<p>
+  <strong>Disposal date:</strong>
+  <%= @item.disposal_date.strftime("%m/%d/%Y") %>
+</p>
+
+<p>
+  <strong>Area use:</strong>
+  <%= @item.area_use %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

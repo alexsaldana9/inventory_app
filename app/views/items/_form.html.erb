@@ -1,0 +1,67 @@
+<%= form_for(item) do |f| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :item_name %>
+    <%= f.text_field :item_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date_received %>
+    <%= f.date_select :date_received %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manufacturer %>
+    <%= f.text_field :manufacturer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :lot_number %>
+    <%= f.text_field :lot_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :expiration_date %>
+    <%= f.date_select :expiration_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :purity %>
+    <%= f.text_field :purity %>
+  </div>
+
+  <div class="field">
+    <%= f.label :storage %>
+    <%= f.text_field :storage %>
+  </div>
+
+  <div class="field">
+    <%= f.label :disposal_date %>
+    <%= f.date_select :disposal_date %>
+  </div>
+
+  <div class="field">
+    <%= f.label :area_use %>
+    <%= f.text_field :area_use %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
