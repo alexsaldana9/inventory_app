@@ -1,5 +1,8 @@
 class ItemsController < ApplicationController
+  before_action :authenticate_user!
+  protect_from_forgery with: :exception
   before_action :set_item, only: [:show, :edit, :update, :destroy]
+
 
   # GET /items
   # GET /items.json
