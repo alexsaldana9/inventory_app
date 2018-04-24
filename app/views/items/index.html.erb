@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Item name</th>
-      <th>Date received</th>
+      <th>Date RECEIVED</th>
       <th>Manufacturer</th>
       <th>Lot number</th>
       <th>Expiration date</th>
@@ -30,7 +30,7 @@
         <td><%= item.quantity %></td>
         <td><%= item.purity %></td>
         <td><%= item.storage %></td>
-        <td><%= item.disposal_date.strftime("%m/%d/%Y") %></td>
+        <td><%= item.disposal_date_str %></td>
         <td><%= item.area_use %></td>
         <td><%= link_to 'Show', item %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
